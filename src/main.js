@@ -4,6 +4,12 @@ import router from './router'
 import store from './store'
 // 导入全局样式
 import './assets/css/global.less'
+// 引入vant
+import Vant from 'vant'
+import 'vant/lib/index.css'
+// 引入amfe-flexible
+import 'amfe-flexible'
+Vue.use(Vant)
 Vue.config.productionTip = false
 new Vue({
   router,
