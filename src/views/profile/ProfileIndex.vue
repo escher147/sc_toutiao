@@ -100,8 +100,8 @@ export default {
     onLogout () {
     // 提示是否退出
       this.$dialog.confirm({
-        title: '标题',
-        message: '弹窗内容'
+        title: '提示',
+        message: '确认退出？'
       }).then(() => {
         // 清除登录状态(vuex容器和localStorage中的登录数据)
         this.$store.commit('setUser', null)

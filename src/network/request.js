@@ -8,7 +8,7 @@ export function request (config) {
   })
   // 设置请求拦截器
   instance.interceptors.request.use(config => {
-    console.log(config)
+    // console.log(config)
     const { user } = store.state
     if (user && user.token) {
       config.headers.Authorization = `Bearer ${store.state.user.token}`

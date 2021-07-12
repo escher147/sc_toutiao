@@ -100,7 +100,7 @@ export default {
       })
       // 登录请求
       login(user).then(res => {
-        console.log(res)
+        // console.log(res)
         const rdata = res.data.data
         this.$store.commit('setUser', rdata)
         this.$toast.success('登录成功')
